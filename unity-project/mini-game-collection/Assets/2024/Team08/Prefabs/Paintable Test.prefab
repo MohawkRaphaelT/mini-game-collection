@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7899994776809883568}
   - component: {fileID: 4922410948798725074}
   m_Layer: 0
-  m_Name: 2024-team08-Paintables
+  m_Name: Paintable Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
