@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MiniGameCollection.Games2024.Team08
 {
-    public class PaintableColorSwitch : MiniGameBehaviour
+    public class PaintableColorSwitch : MonoBehaviour
     {
         //[SerializeField] public Color switchColor = Color.white;
 
@@ -13,9 +13,6 @@ namespace MiniGameCollection.Games2024.Team08
         [SerializeField] public bool IsBlue;
         [SerializeField] public Material[] Material;
         Renderer rend;
-        public MiniGameScoreUI scoreUI;
-        //[SerializeField] public int RedScore;
-        //[SerializeField] public int BlueScore;
         // Start is called before the first frame update
         void Start()
         {
@@ -35,41 +32,31 @@ namespace MiniGameCollection.Games2024.Team08
 
         private void OnTriggerEnter(Collider other)
         {
-            bool redColor = other.GetComponentInChildren<RedPlayer>() != null;
-            bool blueColor = other.GetComponentInChildren<BluePlayer>() != null;
+            bool redCollor = other.GetComponentInChildren<RedPlayer>() != null;
+            bool blueCollor = other.GetComponentInChildren<BluePlayer>() != null;
             //Debug.Log("Is it colliding");
-            if (redColor && IsNeutral == true)
+            if (redCollor && IsNeutral == true)
             {
                 IsRed = true;
                 IsNeutral = false;
                 rend.sharedMaterial = Material[1];
-                //RedScore = RedScore + 1;
-                scoreUI.IncrementPlayerScore(1);
             }
-            else if (blueColor && IsNeutral == true)
+            else if (blueCollor && IsNeutral == true)
             {
-                IsBlue = true;
-                IsNeutral = false;
+                IsBlue = false;
                 rend.sharedMaterial = Material[2];
-                //BlueScore = BlueScore + 1;
-                scoreUI.IncrementPlayerScore(2);
             }
-            else if (redColor && IsBlue == true) 
+            else if (redCollor && IsBlue == true) 
             {
                 IsBlue = false;
                 IsRed = true;
                 rend.sharedMaterial = Material[1];
-                //RedScore = RedScore + 1;
-                //BlueScore = BlueScore - 1;
-
             }
-            else if (blueColor && IsRed == true)
+            else if (blueCollor && IsRed == true)
             {
                 IsRed = false;
                 IsBlue = true;
                 rend.sharedMaterial = Material[2];
-                //BlueScore = BlueScore + 1;
-                //RedScore = RedScore - 1;
             }
         }
     }
