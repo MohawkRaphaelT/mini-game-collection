@@ -3,7 +3,7 @@ A mini game project designed to teach students intermediate GitHub workflow and 
 
 # DevCon #2 How To
 ## Initial Setup: Fork
-Teams we need to create a fork of the repositroy under one team member's account. That team member should then add team members as collaboratos to the forked repository. The team will then be able to edit the repository.
+Teams we need to create a fork of the repository under one team member's account. That team member should then add team members as collaboratos to the forked repository. The team will then be able to edit the repository.
 
 ## Project Navigation
 It is expected that teams will review the [Wiki](https://github.com/MohawkRaphaelT/mini-game-collection/wiki) for information about the project such as configuration, restrictions, templates, and scripts.
