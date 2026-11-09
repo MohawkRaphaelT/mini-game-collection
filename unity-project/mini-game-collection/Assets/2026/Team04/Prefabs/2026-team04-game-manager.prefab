@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7417442567952644004}
   - component: {fileID: 2550553683027837871}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: 2026-team04-game-manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
