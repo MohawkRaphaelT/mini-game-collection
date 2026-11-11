@@ -30,7 +30,7 @@ public class Team04PickUpZone : MiniGameBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Team04RedBox>() != null &&
             transform.parent.GetComponent<Team04PlayerController>().PlayerID == Team04PlayerID.Player1 &&
@@ -46,7 +46,4 @@ public class Team04PickUpZone : MiniGameBehaviour
             transform.parent = collision.gameObject.transform;
         }
     }
-
-
-    //public bool BoxCheck() { }
 }
