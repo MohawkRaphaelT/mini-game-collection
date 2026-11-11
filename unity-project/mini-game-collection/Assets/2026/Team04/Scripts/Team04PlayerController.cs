@@ -31,6 +31,16 @@ namespace MiniGameCollection.Games2026.Team04
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             }
+
+            if(ArcadeInput.Player1.Action2.Pressed == true && GetComponentInChildren<Team04RedBox>() != null) 
+            {
+                GetComponentInChildren<Team04RedBox>().ThrowBox();
+            }
+
+            if (ArcadeInput.Player2.Action2.Pressed == true && GetComponentInChildren<Team04BlueBox>() != null)
+            {
+                GetComponentInChildren<Team04BlueBox>().ThrowBox();
+            }
         }
 
         private void OnValidate()

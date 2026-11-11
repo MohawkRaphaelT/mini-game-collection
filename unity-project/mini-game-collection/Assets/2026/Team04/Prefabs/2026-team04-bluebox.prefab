@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8439266809690851479}
   - component: {fileID: 297822694876100801}
   - component: {fileID: 4168370225336003518}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2026-team04-bluebox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

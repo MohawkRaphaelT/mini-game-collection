@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1255989117969434372}
   - component: {fileID: 7262318856153528834}
   - component: {fileID: 5977229567784531170}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2026-team04-redbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

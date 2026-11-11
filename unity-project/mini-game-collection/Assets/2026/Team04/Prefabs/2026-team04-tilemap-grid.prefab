@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8818384872647184259}
   - component: {fileID: 3079324486970355093}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: 2026-team04-tilemap-grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 5600845384639783197}
   - component: {fileID: 8470038247111180345}
   - component: {fileID: 5023575718940429794}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
