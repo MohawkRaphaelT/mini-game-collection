@@ -209,6 +209,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2067226060681321216, guid: ede84c0d74e2da444847f46695089427,
+        type: 3}
+      propertyPath: PlayerID
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4278716294243323098, guid: ede84c0d74e2da444847f46695089427,
         type: 3}
       propertyPath: <PlayerID>k__BackingField
@@ -2676,12 +2681,12 @@ PrefabInstance:
     - target: {fileID: 8778941569947621413, guid: 78b770d9af65f384e835759f2eaae474,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.946779
+      value: 9.94678
       objectReference: {fileID: 0}
     - target: {fileID: 8778941569947621413, guid: 78b770d9af65f384e835759f2eaae474,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.0402637
+      value: 4.0402627
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

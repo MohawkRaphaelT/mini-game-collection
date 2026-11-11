@@ -4,7 +4,7 @@ namespace MiniGameCollection.Games2026.Team04
 {
     public class Team04PlayerController : MiniGameBehaviour
     {
-        public PlayerID PlayerID;
+        public Team04PlayerID PlayerID;
         public Rigidbody2D rb;
         public float playerSpeed;
         public float jumpSpeed;

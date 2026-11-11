@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 8196561596867888771}
   - component: {fileID: 7434066836325410151}
   - component: {fileID: 489599335925217540}
-  - component: {fileID: 5427876482618992438}
+  - component: {fileID: 2067226060681321216}
   m_Layer: 0
   m_Name: 2026-team04-player
   m_TagString: Untagged
@@ -238,7 +238,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5427876482618992438
+--- !u!114 &2067226060681321216
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,8 +253,8 @@ MonoBehaviour:
   <MiniGameManager>k__BackingField: {fileID: 0}
   PlayerID: 0
   rb: {fileID: 7434066836325410151}
-  playerSpeed: 8
-  jumpSpeed: 10
+  playerSpeed: 0
+  jumpSpeed: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
