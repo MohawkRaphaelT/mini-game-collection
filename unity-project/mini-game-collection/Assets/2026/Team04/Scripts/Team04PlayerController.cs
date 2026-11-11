@@ -5,15 +5,25 @@ namespace MiniGameCollection.Games2026.Team04
     public class Team04PlayerController : MiniGameBehaviour
     {
         public Team04PlayerID PlayerID;
-        public Rigidbody2D rb;
-        public float playerSpeed;
-        public float jumpSpeed;
+        private Rigidbody2D rb;
+        private float playerSpeed = 8f;
+        private float jumpSpeed = 10f;
         private float groundCheckLength = 0.65f;
         public LayerMask groundLayer;
+        public string direction = "right";
 
         void Update()
         {
             float axisX = ArcadeInput.Players[(int)PlayerID].AxisX;
+
+            if (axisX < 0)
+            {
+                direction = "left";
+            }
+            else if (axisX > 0)
+            {
+                direction = "right";
+            }
 
             rb.velocity = new Vector2(axisX * playerSpeed, rb.velocity.y);
 
@@ -25,6 +35,7 @@ namespace MiniGameCollection.Games2026.Team04
 
         private void OnValidate()
         {
+            rb = GetComponent<Rigidbody2D>();
         }
 
         bool GroundCheck()

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4771502150873782844}
   - component: {fileID: 3576846713965420511}
+  - component: {fileID: 8230349155369989265}
   m_Layer: 0
   m_Name: Pickup Box
   m_TagString: Untagged
@@ -26,9 +27,9 @@ Transform:
   m_GameObject: {fileID: 5288037848495122916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 1.3, y: 0, z: 0}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8325360030211473098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77,6 +78,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8230349155369989265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288037848495122916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2034bfc70b7b3c84cb826f7d85647c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MiniGameManager>k__BackingField: {fileID: 0}
 --- !u!1 &8957342047939547952
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +103,7 @@ GameObject:
   - component: {fileID: 8196561596867888771}
   - component: {fileID: 7434066836325410151}
   - component: {fileID: 489599335925217540}
-  - component: {fileID: 2067226060681321216}
+  - component: {fileID: -4271440856562982505}
   m_Layer: 0
   m_Name: 2026-team04-player
   m_TagString: Untagged
@@ -133,7 +147,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 207d45ea29d34e141969875e2158a45b, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -238,7 +252,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2067226060681321216
+--- !u!114 &-4271440856562982505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,9 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MiniGameManager>k__BackingField: {fileID: 0}
   PlayerID: 0
-  rb: {fileID: 7434066836325410151}
-  playerSpeed: 0
-  jumpSpeed: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+  direction: right

@@ -1,4 +1,4 @@
 namespace MiniGameCollection.Games2026.Team04
 {
-    public class Team04BlueBox { }
+    public class Team04BlueBox : MiniGameBehaviour { }
 }
