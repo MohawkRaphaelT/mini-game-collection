@@ -43,7 +43,7 @@ public class Team04PickUpZone : MiniGameBehaviour
             transform.parent.GetComponent<Team04PlayerController>().PlayerID == Team04PlayerID.Player2 &&
             ArcadeInput.Player2.Action2.Pressed)
         {
-            transform.parent = collision.gameObject.transform;
+            collision.gameObject.transform.parent = gameObject.transform;
         }
     }
 }
