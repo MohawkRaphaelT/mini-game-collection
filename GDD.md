@@ -32,7 +32,11 @@ We want to test out whether or not working together in a physics-based environme
 
 ### **Design Rationale**
 
-If this were to be part of a larger game, our test level would likely be one of many levels that get progressively more difficult as players trek through the larger game. The larger game in question would perhaps be an expanded, fully-fleshed out version of our core concept. Every level, there would be a new physics-based challenge that players need to navigate, with less room for error and different physics motions that can be used depending on the situation/item. Players would be required to master the physics and understand how each item behaves differently, as well as how they interact with each other. Reaching the more difficult levels, there could be more restrictions and limitations on which players can do what, based on their colour and the item colour. These stricter limitations could lead to more creative thinking about how to use the physics to an advantage, while still needing to keep in mind the restricted player interactions. 
+If this were to be part of a larger game, our test level would likely be one of many levels that get progressively more difficult as players trek through the larger game. The larger game in question would perhaps be an expanded, fully-fleshed out version of our core concept. 
+
+Every level, there would be a new physics-based challenge that players need to navigate, with less room for error and different physics motions that can be used depending on the situation/item. Players would be required to master the physics and understand how each item behaves differently, as well as how they interact with each other. 
+
+Reaching the more difficult levels, there could be more restrictions and limitations on which players can do what, based on their colour and the item colour. These stricter limitations could lead to more creative thinking about how to use the physics to an advantage, while still needing to keep in mind the restricted player interactions. 
 ***
 
 ### **Mechanic(s)**
