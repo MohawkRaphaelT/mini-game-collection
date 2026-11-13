@@ -2,8 +2,20 @@
 
 (Basic intro stating overall vision for the project)
 ***
+### **Technology**
+
+- Game engine: Unity (v2022.3.62f3)
+
+- Coding language: C#
+
+- Assets: Provided by faculty
+
+- Repository host: GitHub
+***
 
 ### **Objective Statement**
+
+###### **Objective Statement Question**
 
 Using our arcade cabinet game, under MegaSuperAwesome Games, we are attempting to answer the question:
 
@@ -12,6 +24,10 @@ Using our arcade cabinet game, under MegaSuperAwesome Games, we are attempting t
 For clarification on our objective... We have taken inspiration from puzzle-platformer games such as *Fireboy and Watergirl*, in which each player is a different coloured character, in touch with different elements. Each player can only interact with objects of their colour/element. We wish to add onto this formula by adding physics-based puzzles into the mix. Take the same concept of only being able to interact with a particular coloured item, but apply physics to it. 
 
 We want to test out whether or not working together in a physics-based environment could be fun, or if it would end up being tedious/frustrating. There is certainly a chance that the sort of "wildcard" physics element could add a bit of unpredictable fun, or some interesting gravity/motion puzzles if the level design allows for it. We hope for the physics to add another layer onto problem-solving, as players will not only need to coordinate in terms of who can interact with what items, but also how to use those items given the unique physics situation. Players will need to think outside the box to use the physics to their advantage, when traditional methods will not cut it.  
+
+###### **Objective Statement Answer**
+
+(Discuss the answer to our question once our prototype is complete)
 ***
 
 ### **Design Rationale**
@@ -45,7 +61,7 @@ Our main goal with this gameplay loop is to create an environment where players 
 
 ### **Sources**
 
-(Put sources here)
+(Put sources here for coding and assets (if we use extra assets))
 ***
 
 ### **Code Snippets**
