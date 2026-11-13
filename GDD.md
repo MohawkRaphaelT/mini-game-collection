@@ -1,3 +1,8 @@
+### **Intro**
+
+(Basic intro stating overall vision for the project)
+***
+
 ### **Objective Statement**
 
 Using our arcade cabinet game, under MegaSuperAwesome Games, we are attempting to answer the question:
@@ -14,16 +19,43 @@ We want to test out whether or not working together in a physics-based environme
 If this were to be part of a larger game, our test level would likely be one of many levels that get progressively more difficult as players trek through the larger game. The larger game in question would perhaps be an expanded, fully-fleshed out version of our core concept. Every level, there would be a new physics-based challenge that players need to navigate, with less room for error and different physics motions that can be used depending on the situation/item. Players would be required to master the physics and understand how each item behaves differently, as well as how they interact with each other. Reaching the more difficult levels, there could be more restrictions and limitations on which players can do what, based on their colour and the item colour. These stricter limitations could lead to more creative thinking about how to use the physics to an advantage, while still needing to keep in mind the restricted player interactions. 
 ***
 
+### **Mechanic(s)**
+The mechanics of our prototype revolve around the physics system, as that is what we are trying to showcase in our experience. The two main mechanics are:
+
+- Pushing boxes of the same colour as the player-character. This is done by simply walking into the box. The player of the opposing colour to the object cannot interact with it, so this must be kept in mind to prevent potential softlocks. The boxes can be used to perform actions such as creating a makeshift bridge or tower, as well as dropping down on something to enable a trigger. 
+- Picking up boxes and throwing them. The same colour correspondence rules as the previous mechanic apply to this one as well. Players can pick up a box and throw them to another location. This may come in handy if there is a large gap in the environment and the player needs to throw the object over to a specific spot on the other end of the level. Alternatively, players can experiment with how these boxes interact with each other when they collide- particularly when one is being tossed at another. This could be helpful if, for example, players are unable to reach a box, but they can still influence it through physics if they chuck another box at it. 
+***
+
 ### **Gameplay Loop**
 
-(Discuss how trial and error/softlocking and resetting will be a big part of the game. Learning how the physics work and learning the level level will be critical to player success.)
 The general gameplay loop will involve players engaging in a cycle of trial and error. Since this is a physics-based game, there would be plenty of opportunities for players to essentially softlock themselves. This cycle forces them to practice with and learn the physics system. Players might fail the first few attempts at the level because they are not familiar enough with how each object's physics behaves as well as how objects interact with each other based on those physics. 
 
 Our main goal with this gameplay loop is to create an environment where players are encouraged and rewarded for trial and error with the game's physics objects. This would create a large amount of replayability as players attempt to master the physics and learn the level. Players backing themselves into a corner and softlocking themselves is an intended result, as it forces players to look at what they did wrong, restart, and try again until they get it right. They will need to do this again and again until they deduce not only how to navigate the level properly, but more importantly, how to engage with the physics just right to get the desired result (which may require some tricky maneuvering alongside ample knowledge of the in-game physics). 
+***
 
-### **Mechanic(s)**
+### **Aesthetics**
 
-(Discuss how our main mechanics are to test out the physics in conjunction with the limited player interactions. How throwing and pushing boxes work, and how the players cannot interact with each other's boxes, which may lead to interesting scenarios where players need to think outside the box using the physics system, or interesting learning moments)
+(Discuss aesthetics and how that helps enhance the game experience)
+***
 
+### **Characters**
+
+(Discuss what characters the players control- what are their roles in the world, what are they trying to do, what are their motivations?)
+***
+
+### **Sources**
+
+(Put sources here)
+***
+
+### **Code Snippets**
+
+(Put code snippets here)
+***
+
+### **Prototype Progression**
+
+(List scrapped ideas & changed ideas, along with documentation photos/screenshots)
+***
 
 
