@@ -4,7 +4,7 @@
 ***
 ### **Technology**
 
-- Game engine: Unity (v2022.3.62f3)
+- Game engine: Unity (v2022.3.62f2)
 
 - Coding language: C#
 
