@@ -20,7 +20,7 @@ namespace MiniGameCollection.Games2026.Team04
 
         public void ThrowBox()
         {
-            if (GetComponentInChildren<Team04RedBox>() != null && ArcadeInput.Player1.Action2.Pressed)
+            if (GetComponentInChildren<Team04BlueBox>() != null && ArcadeInput.Player2.Action2.Pressed)
             {
                 transform.parent = null;
                 rb2d.velocity += Vector2.one;
