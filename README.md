@@ -18,3 +18,26 @@ GitHub Pages are enabled for this project. Successful builds on `main` will be p
 
 If you are interested to know more about how this automation works, consider reviewing [.github/workflows/ci.yml](https://github.com/MohawkRaphaelT/mini-game-collection/blob/main/.github/workflows/ci.yml)'s source and comments. In brief, a GitHub Action is run that starts up a Linux virtual machine with Unity on it, pulls down the repository, creates a WebGL build, then pushes the artifacts (build) to GitHub Pages.
 
+# Runner-up!
+
+A competitive racing game where 2 Players race against each other. Players have 30 seconds to make it to the farthest. Whoever makes it furthest is declared the winner. There are obstacles to jump over. If they hit an obstacle, they come to a stop and must run through it to get back into the race.
+
+Our objective: Can we instill competitiveness amongst 2 Players by testing their reflexes against each other?
+## Controls
+
+### Player 1
+Up key - Jump <br>
+Right key - Move right
+
+### Player 2
+W - Jump <br>
+D - Move right
+
+## Roles
+Brock Hutter - Level developer, Asset implementer
+
+Jameson Phong - Tester, Asset sourcer, Github lead 
+
+Liam McDougall - Lead programmer, Documentation 
+
+
