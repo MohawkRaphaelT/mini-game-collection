@@ -31,11 +31,12 @@ namespace MiniGameCollection.Games2026.Team03
             //check input of players
             if (ArcadeInput.Players[(int)PlayerID].Action1.Pressed)
             {
-                Interact();
+                //Interact();
+                return;
             }
         }
 
-
+        /*
         void Interact()
         {
             if (PlayerID == PlayerID.Player1)
@@ -84,5 +85,6 @@ namespace MiniGameCollection.Games2026.Team03
                 }
             }
         }
+        */
     }
 }
