@@ -8,6 +8,8 @@ namespace MiniGameCollection.Games2026.Team06
         [field: SerializeField] public Rigidbody2D Rigidbody2D { get; private set; }
         [field: SerializeField] public bool CanPlay { get; private set; } = false;
         [field: SerializeField] public float MoveSpeed { get; private set; } = 5f;
+        
+        [SerializeField] private TurfGrid grid;
 
 
 
@@ -21,7 +23,7 @@ namespace MiniGameCollection.Games2026.Team06
 
             Vector2 stick = input.Joystick8Way;
             Rigidbody2D.velocity = stick * MoveSpeed;
-
+            grid.Paint(transform.position, PlayerID);
         }
 
 
