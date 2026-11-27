@@ -10,8 +10,17 @@ namespace MiniGameCollection.Games2026.Team06
         [field: SerializeField] public float MoveSpeed { get; private set; } = 5f;
         
         [SerializeField] private TurfGrid grid;
+        [SerializeField] private Bomb bombPrefab;
+        [SerializeField] private float bombCooldown = 5f;
 
+        private Vector2 facing = Vector2.right;
+        private float nextBombTime = 0f;
 
+        private void Start()
+        {
+            if (PlayerID == PlayerID.Player2)
+                facing = Vector2.left;
+        }
 
         void Update()
         {
@@ -23,7 +32,21 @@ namespace MiniGameCollection.Games2026.Team06
 
             Vector2 stick = input.Joystick8Way;
             Rigidbody2D.velocity = stick * MoveSpeed;
+
+            if (stick != Vector2.zero)
+                facing = stick.normalized;
+
             grid.Paint(transform.position, PlayerID);
+
+
+            if (input.Action2.Pressed && Time.time >= nextBombTime)
+            {
+                nextBombTime = Time.time + bombCooldown;
+
+                Vector3 spawnPosition = transform.position + (Vector3)(facing * 0.6f);
+                Bomb bomb = Instantiate(bombPrefab, spawnPosition, Quaternion.identity);
+                bomb.Throw(grid, PlayerID, facing);
+            }
         }
 
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+
 namespace MiniGameCollection.Games2026.Team06
 {
     public class TurfGrid : MiniGameBehaviour
@@ -11,10 +12,24 @@ namespace MiniGameCollection.Games2026.Team06
         [SerializeField] private Color player1Color = new Color(1f, 0.5f, 0.5f);
         [SerializeField] private Color player2Color = new Color(0.5f, 0.6f, 1f);
 
-        public void Paint(Vector3 worldPosition, PlayerID player)
+        public void Paint(Vector3 worldPosition, PlayerID player, int radius = 0)
         {
-            Vector3Int cell = floor.WorldToCell(worldPosition);
+            Vector3Int center = floor.WorldToCell(worldPosition);
+          
+          // AI used for this equation
+          for (int x = -radius; x <= radius; x++)
+            {
+                for (int y = -radius; y <= radius; y++)
+                {
+                    if (x * x + y * y > radius * radius) continue;
 
+                    PaintCell(new Vector3Int(center.x + x, center.y + y, 0), player);
+                }
+            }
+        }
+
+        private void PaintCell(Vector3Int cell, PlayerID player)
+        {
             if (!floor.HasTile(cell)) return;
 
             Color oneColor = player1Color;
@@ -26,7 +41,7 @@ namespace MiniGameCollection.Games2026.Team06
                 twoColor = player1Color;
                 otherPlayer = PlayerID.Player1;
             }
-            
+
             Color current = floor.GetColor(cell);
 
             if (current == oneColor)
@@ -38,7 +53,6 @@ namespace MiniGameCollection.Games2026.Team06
             floor.SetTileFlags(cell, TileFlags.None);
             floor.SetColor(cell, oneColor);
         }
-
 
     }
 }
