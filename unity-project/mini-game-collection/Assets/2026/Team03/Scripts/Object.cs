@@ -22,11 +22,13 @@ namespace MiniGameCollection.Games2026.Team03
         bool Player2Holding = false;
 
         private SpriteRenderer spriteRenderer;
+        private Collider2D objectCollider;
 
         // Start is called before the first frame update
         void Start()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
+            objectCollider = GetComponent<Collider2D>();
         }
 
         // Update is called once per frame
@@ -34,6 +36,7 @@ namespace MiniGameCollection.Games2026.Team03
         {
             CollisionHandling();
             CollisionVisual();
+            FollowPlayer();
         }
 
         void CollisionVisual()
@@ -72,12 +75,28 @@ namespace MiniGameCollection.Games2026.Team03
                 {
                     Player1Hovering = false;
                     Player1Holding = true;
+                    objectCollider.isTrigger = true;
                 }
 
                 if (Player2Hovering && PlayerID == PlayerID.Player2)
                 {
                     Player2Hovering = false;
                     Player2Holding = true;
+                    objectCollider.isTrigger = true;
+                }
+            }
+            if (ArcadeInput.Players[(int)PlayerID].Action2.Pressed)
+            {
+                if (Player1Holding && PlayerID == PlayerID.Player1)
+                {
+                    Player1Holding = false;
+                    objectCollider.isTrigger = false;
+                }
+
+                if (Player2Holding && PlayerID == PlayerID.Player2)
+                {
+                    Player2Holding = false;
+                    objectCollider.isTrigger = false;
                 }
             }
         }
@@ -86,13 +105,11 @@ namespace MiniGameCollection.Games2026.Team03
         {
             if(Player1Holding && PlayerID == PlayerID.Player1)
             {
-                Vector2 direction = Player1.transform.position - transform.position;
-                rb2d.velocity = direction;
+                transform.position = Player1.transform.position;
             }
             if (Player2Holding && PlayerID == PlayerID.Player2)
             {
-                Vector2 direction = Player2.transform.position - transform.position;
-                rb2d.velocity = direction;
+                transform.position = Player2.transform.position;
             }
         }
 
