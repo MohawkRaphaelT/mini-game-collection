@@ -46,7 +46,11 @@
 ## Citations: 
 
 > Mohawk College Asset Pack
+
 > Scripting 			by Cody Bonnett
+
 > Level Work/Scene Composition 	by Diogo Campos
+
 > Documentation 		by Payton Bontje 
+
 >      				by Simon Swing
