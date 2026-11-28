@@ -3784,6 +3784,66 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &728683308 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3657013293467664475, guid: e90a5436273f759458daf84988e9de9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7483437301129036156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207fbdc81a91e8b4daa790f29d9b239d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &905163757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905163759}
+  - component: {fileID: 905163758}
+  m_Layer: 0
+  m_Name: ScoreKeeper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &905163758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905163757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7465875020c03714f8b27bab3a8d0fe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MiniGameManager>k__BackingField: {fileID: 2062312792}
+  <MiniGameScoreUI>k__BackingField: {fileID: 728683308}
+  <P1Score>k__BackingField: 0
+  <P2Score>k__BackingField: 0
+--- !u!4 &905163759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905163757}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1156350192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2572141219595514670, guid: 75b4032899dbdb9429748f2106c9f1cd,
@@ -3807,6 +3867,10 @@ MonoBehaviour:
   <Rigidbody2D>k__BackingField: {fileID: 1156350195}
   <CanPlay>k__BackingField: 1
   <MoveSpeed>k__BackingField: 5
+  grid: {fileID: 1703296852}
+  bombPrefab: {fileID: 969227226941959144, guid: 808021545262d4147878c6753b13e8ec,
+    type: 3}
+  bombCooldown: 5
 --- !u!50 &1156350195 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1719052369440994515, guid: 75b4032899dbdb9429748f2106c9f1cd,
@@ -5445,6 +5509,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1703296851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703296853}
+  - component: {fileID: 1703296852}
+  m_Layer: 0
+  m_Name: TurfGrid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1703296852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703296851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a26c3dcaeff1ce34e9d04e4a63460fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MiniGameManager>k__BackingField: {fileID: 2062312792}
+  floor: {fileID: 1410377224}
+  scoreKeeper: {fileID: 905163758}
+  player1Color: {r: 1, g: 0.5, b: 0.5, a: 1}
+  player2Color: {r: 0.5, g: 0.6, b: 1, a: 1}
+--- !u!4 &1703296853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703296851}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1784750639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6160,6 +6273,10 @@ MonoBehaviour:
   <Rigidbody2D>k__BackingField: {fileID: 1882365420}
   <CanPlay>k__BackingField: 1
   <MoveSpeed>k__BackingField: 5
+  grid: {fileID: 1703296852}
+  bombPrefab: {fileID: 969227226941959144, guid: 808021545262d4147878c6753b13e8ec,
+    type: 3}
+  bombCooldown: 5
 --- !u!50 &1882365420 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1458565087172948233, guid: f6fd1a1207e67524aa05c0381f9e16a8,
@@ -6220,6 +6337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2062312791}
   - component: {fileID: 2062312792}
+  - component: {fileID: 2062312793}
   m_Layer: 0
   m_Name: MiniGameManager
   m_TagString: Untagged
@@ -6257,13 +6375,26 @@ MonoBehaviour:
   <State>k__BackingField: 0
   <CurrentCountDownMessage>k__BackingField: 
   <TimeFloat>k__BackingField: 0
-  <DebugMode>k__BackingField: 1
-  <DebugGameTime>k__BackingField: 5
+  <DebugMode>k__BackingField: 0
+  <DebugGameTime>k__BackingField: 60
   <CountDownStartMessage>k__BackingField: GO!
   <MaxGameTime>k__BackingField: -681052313
   <Winner>k__BackingField: 0
   <AuthorCredits>k__BackingField:
   - Firstname Lastname
+--- !u!114 &2062312793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062312790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3693f52471907974da9a3c6d531c4fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MiniGameManager: {fileID: 2062312792}
 --- !u!1001 &2220915157961606683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6332,6 +6463,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6923031666714269742, guid: 75b4032899dbdb9429748f2106c9f1cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6358,6 +6494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128311335169779015, guid: f6fd1a1207e67524aa05c0381f9e16a8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5394922991405178916, guid: f6fd1a1207e67524aa05c0381f9e16a8,
         type: 3}
@@ -6664,3 +6805,5 @@ SceneRoots:
   - {fileID: 7483437301129036156}
   - {fileID: 2062312791}
   - {fileID: 2044005327}
+  - {fileID: 1703296853}
+  - {fileID: 905163759}
