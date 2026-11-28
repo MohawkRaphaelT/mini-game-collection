@@ -3868,6 +3868,9 @@ MonoBehaviour:
   <CanPlay>k__BackingField: 1
   <MoveSpeed>k__BackingField: 5
   grid: {fileID: 1703296852}
+  bombPrefab: {fileID: 969227226941959144, guid: 808021545262d4147878c6753b13e8ec,
+    type: 3}
+  bombCooldown: 5
 --- !u!50 &1156350195 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1719052369440994515, guid: 75b4032899dbdb9429748f2106c9f1cd,
@@ -6271,6 +6274,9 @@ MonoBehaviour:
   <CanPlay>k__BackingField: 1
   <MoveSpeed>k__BackingField: 5
   grid: {fileID: 1703296852}
+  bombPrefab: {fileID: 969227226941959144, guid: 808021545262d4147878c6753b13e8ec,
+    type: 3}
+  bombCooldown: 5
 --- !u!50 &1882365420 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1458565087172948233, guid: f6fd1a1207e67524aa05c0381f9e16a8,
@@ -6457,6 +6463,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6923031666714269742, guid: 75b4032899dbdb9429748f2106c9f1cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6483,6 +6494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128311335169779015, guid: f6fd1a1207e67524aa05c0381f9e16a8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5394922991405178916, guid: f6fd1a1207e67524aa05c0381f9e16a8,
         type: 3}
